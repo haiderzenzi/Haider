@@ -1,0 +1,155 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\bower_components\**" />
+    <Compile Remove="wwwroot\dist\**" />
+    <Content Remove="wwwroot\bower_components\**" />
+    <Content Remove="wwwroot\dist\**" />
+    <EmbeddedResource Remove="wwwroot\bower_components\**" />
+    <EmbeddedResource Remove="wwwroot\dist\**" />
+    <None Remove="wwwroot\bower_components\**" />
+    <None Remove="wwwroot\dist\**" />
+    <TypeScriptCompile Remove="wwwroot\bower_components\**" />
+    <TypeScriptCompile Remove="wwwroot\dist\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\js\main.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Account\images\bg-01.jpg" />
+    <None Remove="Views\Account\images\default-avatar.png" />
+    <None Remove="Views\Account\images\icons\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Account\images\bg-01.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Account\images\default-avatar.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Account\images\icons\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.9.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets2\js\main.js" />
+    <None Include="wwwroot\assets2\vendor\aos\aos.js" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets2\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\assets2\vendor\icofont\fonts\icofont.woff2" />
+    <None Include="wwwroot\assets2\vendor\isotope-layout\isotope.pkgd.js" />
+    <None Include="wwwroot\assets2\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <None Include="wwwroot\assets2\vendor\jquery.easing\jquery.easing.min.js" />
+    <None Include="wwwroot\assets2\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\assets2\vendor\jquery\jquery.min.map" />
+    <None Include="wwwroot\assets2\vendor\line-awesome\fonts\la-brands-400.svg" />
+    <None Include="wwwroot\assets2\vendor\line-awesome\fonts\la-brands-400.woff2" />
+    <None Include="wwwroot\assets2\vendor\line-awesome\fonts\la-regular-400.svg" />
+    <None Include="wwwroot\assets2\vendor\line-awesome\fonts\la-regular-400.woff2" />
+    <None Include="wwwroot\assets2\vendor\line-awesome\fonts\la-solid-900.svg" />
+    <None Include="wwwroot\assets2\vendor\line-awesome\fonts\la-solid-900.woff2" />
+    <None Include="wwwroot\assets2\vendor\owl.carousel\LICENSE" />
+    <None Include="wwwroot\assets2\vendor\owl.carousel\owl.carousel.js" />
+    <None Include="wwwroot\assets2\vendor\owl.carousel\owl.carousel.min.js" />
+    <None Include="wwwroot\assets2\vendor\owl.carousel\README.md" />
+    <None Include="wwwroot\assets2\vendor\php-email-form\validate.js" />
+    <None Include="wwwroot\assets3\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets3\js\gsdk-bootstrap-wizard.js" />
+    <None Include="wwwroot\assets3\js\jquery-1.10.2.js" />
+    <None Include="wwwroot\assets3\js\jquery-2.2.4.min.js" />
+    <None Include="wwwroot\assets3\js\jquery.bootstrap.wizard.js" />
+    <None Include="wwwroot\assets3\js\jquery.validate.min.js" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\mixins\_vendor-prefixes.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_buttons.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_card.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_footers.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_inputs.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_labels.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_misc.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_mixins.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_navs-pagination.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_responsive.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_tooltips.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_typography.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_variables.scss" />
+    <None Include="wwwroot\assets3\scss\gsdk-bootstrap-wizard\_wizard-card.scss" />
+    <None Include="wwwroot\assets4\js\scripts.js" />
+    <None Include="wwwroot\assets5\js\main.js" />
+    <None Include="wwwroot\assets5\vendor\aos\aos.js" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets5\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\assets5\vendor\icofont\fonts\icofont.woff2" />
+    <None Include="wwwroot\assets5\vendor\isotope-layout\isotope.pkgd.js" />
+    <None Include="wwwroot\assets5\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <None Include="wwwroot\assets5\vendor\jquery.easing\jquery.easing.min.js" />
+    <None Include="wwwroot\assets5\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\assets5\vendor\jquery\jquery.min.map" />
+    <None Include="wwwroot\assets5\vendor\line-awesome\fonts\la-brands-400.svg" />
+    <None Include="wwwroot\assets5\vendor\line-awesome\fonts\la-brands-400.woff2" />
+    <None Include="wwwroot\assets5\vendor\line-awesome\fonts\la-regular-400.svg" />
+    <None Include="wwwroot\assets5\vendor\line-awesome\fonts\la-regular-400.woff2" />
+    <None Include="wwwroot\assets5\vendor\line-awesome\fonts\la-solid-900.svg" />
+    <None Include="wwwroot\assets5\vendor\line-awesome\fonts\la-solid-900.woff2" />
+    <None Include="wwwroot\assets5\vendor\owl.carousel\LICENSE" />
+    <None Include="wwwroot\assets5\vendor\owl.carousel\owl.carousel.js" />
+    <None Include="wwwroot\assets5\vendor\owl.carousel\owl.carousel.min.js" />
+    <None Include="wwwroot\assets5\vendor\owl.carousel\README.md" />
+    <None Include="wwwroot\assets5\vendor\php-email-form\validate.js" />
+    <None Include="wwwroot\assets\js\main.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+    <Folder Include="wwwroot\Portfolio\" />
+  </ItemGroup>
+
+</Project>
